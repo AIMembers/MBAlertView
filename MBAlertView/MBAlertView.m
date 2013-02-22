@@ -303,6 +303,7 @@ static MBAlertView *currentAlert;
     if(_imageView)
         return _imageView;
     _imageView = [[UIImageView alloc] init];
+    _imageView.autoresizingMask = [self defaultAutoResizingMask];
     return _imageView;
 }
 
